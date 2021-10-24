@@ -1,0 +1,82 @@
+// app global css in SCSS form
+
+// 约束图片，避免溢出
+img {
+  max-width: 100%;
+}
+
+a:link, a:active, a:hover, a:visited {
+  color: unset;
+  text-decoration: none
+}
+
+.print-hide {
+  @media print {
+    display: none;
+  }
+}
+
+.a4-container {
+  max-width: 21cm;
+  margin: auto;
+}
+
+.a4 {
+  max-width: 21cm;
+  height: 29.7cm;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  margin: 8mm auto;
+  padding: 24px 48px;
+  @media only screen and (max-width: $breakpoint-sm) {
+    margin: 0 auto;
+    padding: 24px 24px;
+    border-radius: initial;
+    width: initial;
+    height: initial;
+    box-shadow: initial;
+  }
+
+  .q-timeline__content {
+    padding: 0;
+  }
+
+  .q-timeline__subtitle {
+    display: none;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html, body {
+    width: 210mm!important;
+    height: 297mm;
+  }
+  .a4 {
+    margin: 0;
+    position: relative;
+    z-index: 9998 !important;
+    border: initial;
+    border-radius: initial;
+    width: 210mm!important;
+    height: 297mm;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+
+  .q-layout {
+    background: white !important;
+  }
+  .q-page-container {
+    padding: 0 !important;
+  }
+  .q-tooltip {
+    display: none;
+  }
+}
