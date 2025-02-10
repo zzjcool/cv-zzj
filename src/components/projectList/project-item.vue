@@ -3,9 +3,9 @@
     <q-card flat bordered class="q-py-sm q-px-md">
       <div class="q-gutter-y-xs">
         <div class="row items-center">
-          <div class="text-weight-bold text-subtitle2 col-auto">项目名称：</div>
+          <div class="text-weight-bold text-subtitle2 col-auto">工作岗位：</div>
           <div class="col row items-center">{{ project.name }}
-            <q-chip size="sm"><a class="col" :href="project.demo">{{ project.demo }}</a></q-chip>
+            <q-chip v-if="project.demo" size="sm"><div class="col" :href="project.demo">{{ project.demo }}</div></q-chip>
           </div>
         </div>
 

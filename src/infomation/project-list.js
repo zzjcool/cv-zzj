@@ -1,30 +1,33 @@
 // 相关网站的链接
 const projectList = [
   {
-    name: '华东师范大学水杉在线教育平台',
-    demo: 'https://www.shuishan.net.cn/',
-    detail: '华东师范大学数据科学与工程学院推出的新一代数字化全链路在线学习平台。',
+    name: '腾讯-中间件研发工程师-云函数',
+    demo: '2021.11-2022.4',
+    detail: '腾讯云，云函数（SCF）调度层开发。',
     technology: [
-      '云实训平台：Kubernetes+Client-go+Gin+GORM+Xterm.js'
+      ''
     ],
     duty: [
-      'DevOps实践：编写Dockerfile，使用GitLab ci通过自部署的Gitlab runner完成镜像打包并上传到私有仓库,最终触发Hook，结合K8S的探针实现无缝更新。',
-      '云实训平台：基于Serverless理念，后端使用Golang进行开发，通过Client-go管理Kubernetes集群，通过不同的镜像提供在线实训容器，为了提供Web端命令行功能，将容器内部stdin、stdout重定向，并通过websocket的方式暴露给用户。采用JWT进行鉴权。'
+      '云函数冷启动宿主机调度性能优化：重构原有逻辑，添加并发能力，提升宿主机调度的性能。',
+      '云函数镜像拉取优化：通过宿主机添加LRU缓存，对镜像进行缓存，提高镜像拉取的效率。'
+    ]
+  },
+  {
+    name: '腾讯-中间件研发工程师-消息队列',
+    demo: '2022.4-现今',
+    detail: '腾讯云消息队列产品RocketMQ、RabbitMQ、MQTT',
+    technology: [
+    ],
+    duty: [
+      '消息队列产品发货平台设计与开发：基于Kubernetes + Helm + 状态机等技术实现了消息队列的自动发货功能。支持了RocketMQ4.x、RocketMQ5.x、RabbitMQ、MQTT、Pulsar消息队列的上云。',
+      'MQTT Benchmark工具开发，使用Golang开发出高性能、支持一机一证书、监控采集、分布式压测的benchmark工具。',
+      '消息队列可观测性增强、借助Sentinel实现分布式限流、支持消息队列动态更新配置、TLS证书动态重载。',
+      'RabbitMQ、RocketMQ消息队列私有化输出，基于容器化，实现快速输出私有化平台。',
+      'MQTT 共享订阅模式，消息顺序性保证。',
+      'CI/CD 流水线搭建、对版本管理、部署、测试、发布等流程进行自动化',
+      '开发效率提升，借助Docker compose实现开发环境快速构建'
     ]
   }
-  // {
-  //   name: '夏普解决方案网站',
-  //   demo: 'http://sharp.next-lab.cn/',
-  //   // detail: '在线教育平台',
-  //   technology: [
-  //     '后端基于Spring Boot',
-  //     '前端采用Element UI，支持响应式布局'
-  //   ],
-  //   duty: [
-  //     '全栈开发',
-  //     '数据库设计'
-  //   ]
-  // }
 ]
 
 export default projectList

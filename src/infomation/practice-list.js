@@ -2,7 +2,7 @@
 const practiceList = [
   {
     name: '华为',
-    duration: '2021.6-至今',
+    duration: '2021.6-2021.9',
     job: '云计算开发工程师',
     technology: [
       '云实训平台：Kubernetes+Client-go+Gin+GORM+Xterm.js'

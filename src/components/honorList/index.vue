@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-col-gutter-x-md">
+  <div v-show="true" class="row q-col-gutter-x-md">
     <base-box class="col-6" label="获奖经历">
       <div class="q-gutter-y-xs">
         <div class="row items-center" v-for="(honor, idx) in honorList" :key="idx">

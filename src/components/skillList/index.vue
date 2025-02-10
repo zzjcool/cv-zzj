@@ -3,7 +3,7 @@
     <base-box class="col-6" label="README">
       <div class="q-gutter-y-xs">
         <div style="white-space: pre-wrap">{{ readme.introduction }}</div>
-        <div class="row items-center">
+        <div v-show="false" class="row items-center">
           <b>本科：</b>
           <div class="col row justify-between">
             <q-badge class="bg-grey-7" style="font-size: 10px">
@@ -17,7 +17,7 @@
             </q-badge>
           </div>
         </div>
-        <div class="row items-center">
+        <div v-show="false" class="row items-center">
           <b>硕士：</b>
           <div class="col row justify-between">
             <q-badge class="bg-grey-10" style="font-size: 10px">

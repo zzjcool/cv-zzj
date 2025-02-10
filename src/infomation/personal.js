@@ -7,7 +7,7 @@ const personal = {
   zhihu: 'toi-toi-toi',
   birthday: new Date(1997, 10, 25), // 生日，年月日
   degree: '硕士',
-  location: '上海',
+  location: '杭州',
   school: '华东师范大学',
   college: '数据科学与工程学院'
 }

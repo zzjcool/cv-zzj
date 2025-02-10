@@ -1,5 +1,5 @@
 <template>
-  <base-box label="项目&实习经历">
+  <base-box label="项目&工作经历">
     <div class="column q-col-gutter-sm">
       <div class="col-6">
         <div class="q-gutter-y-md">

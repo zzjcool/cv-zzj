@@ -18,6 +18,7 @@
             <project-list></project-list>
           </q-timeline-entry>
           <q-timeline-entry
+            v-show="false"
             color="blue-grey-8"
             icon="fas fa-award"
           >
