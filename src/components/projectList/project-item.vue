@@ -15,7 +15,7 @@
         <!--        </div>-->
 
         <div v-if="project.detail" class="row">
-          <div class="text-weight-bold text-subtitle2 col-auto">项目介绍：</div>
+          <div class="text-weight-bold text-subtitle2 col-auto">岗位介绍</div>
           <div class="col">{{ project.detail }}</div>
         </div>
 
@@ -27,7 +27,7 @@
         <!--        </div>-->
 
         <div class="">
-          <div class="text-weight-bold text-subtitle2 col-auto">主要职责：</div>
+          <div class="text-weight-bold text-subtitle2 col-auto">主要工作：</div>
           <div class="col">
             <div v-for="(duty,idx) in project.duty" :key="idx">
               <q-icon class="q-pr-md" name="settings_ethernet"/>
