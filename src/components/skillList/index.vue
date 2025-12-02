@@ -1,7 +1,7 @@
 <template>
-  <div class="row q-col-gutter-x-md">
-    <base-box class="col-6" label="README">
-      <div class="q-gutter-y-xs">
+  <div class="readme-skill-grid">
+    <base-box class="readme-skill-card" label="README">
+      <div class="q-gutter-y-xs readme-content">
         <div style="white-space: pre-wrap">{{ readme.introduction }}</div>
         <div v-show="false" class="row items-center">
           <b>本科：</b>
@@ -40,8 +40,8 @@
         <!--        </div>-->
       </div>
     </base-box>
-    <base-box class="col-6" label="专业技能">
-      <div class="q-gutter-y-xs">
+    <base-box class="readme-skill-card" label="专业技能">
+      <div class="q-gutter-y-xs skill-content">
         <div class="items-center" v-for="(skill,idx) in skillList" :key="idx">
           <q-icon class="q-pr-sm" :name="idx%2===1?'far fa-star':'fas fa-star'"/>
           {{ skill }}
@@ -70,5 +70,29 @@ export default {
 </script>
 
 <style scoped>
+.readme-skill-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
 
+@media (min-width: 768px) {
+  .readme-skill-grid {
+    grid-template-columns: minmax(220px, 0.8fr) minmax(360px, 1.2fr);
+  }
+}
+
+.readme-skill-card {
+  height: 100%;
+}
+
+.readme-content,
+.skill-content {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.readme-content {
+   font-size: 0.82rem;
+}
 </style>

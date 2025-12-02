@@ -6,18 +6,11 @@
     <base-information-item
       label="现居地"
       :text="personal.location"/>
-    <base-information-item
-      label="学校"
-      :text="personal.school"/>
-    <base-information-item
-      label="学院"
-      :text="personal.college"/>
   </div>
 </template>
 
 <script>
 import personal from 'src/infomation/personal'
-import link from 'src/infomation/link'
 import { date } from 'quasar'
 import BaseInformationItem from 'components/personalInformation/base-information-item'
 
@@ -26,8 +19,7 @@ export default {
   components: { BaseInformationItem },
   data () {
     return {
-      personal: personal,
-      link
+      personal: personal
     }
   },
   methods: {
