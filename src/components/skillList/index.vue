@@ -82,6 +82,16 @@ export default {
   }
 }
 
+@media print {
+  .readme-skill-grid {
+    grid-template-columns: minmax(220px, 0.75fr) minmax(360px, 1.25fr);
+  }
+
+  .readme-skill-card {
+    break-inside: avoid;
+  }
+}
+
 .readme-skill-card {
   height: 100%;
 }
